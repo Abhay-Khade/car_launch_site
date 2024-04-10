@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            gap: 10px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-height {
+            grid-row: span 2;
+        }
+
+        .image-hover {
+            transition: transform 0.3s ease;
+        }
+
+        .image-hover:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="gallery-item ">
+            <img src="car1.webp" class="image-hover" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="car2.webp" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="car3.jpg" alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="car3.jpg" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="car2.webp" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="car1.webp" alt="Image 5">
+        </div>
+    </div>
+</body>
+
+</html>

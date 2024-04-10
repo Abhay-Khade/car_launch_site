@@ -1,0 +1,95 @@
+.text-container{
+    margin: 64px 0px;
+}
+
+.text-header{
+    margin: 0px 0px 32px 0px;
+    text-align: center;
+}
+
+.text-para{
+    display: flex;
+    justify-content: center;
+}
+
+.para-text{
+    text-align: center;
+    width: 900px;
+}
+
+.car-info-row{
+    max-height: 400px;
+    /* margin: 64px 0px; */
+}
+
+.info-container{
+    margin: 64px 0px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.full-height {
+    grid-row: span 2;
+}
+
+.image-hover {
+    transition: transform 0.3s ease;
+}
+
+.image-hover:hover {
+    transform: scale(1.1);
+}
+
+.gallery{
+    margin: 64px 0px;
+}
+
+.card-image{
+    margin: 8px;
+}
+
+.card-container{
+    margin: 64px 0px;
+}
+
+.form-container{
+    margin: 64px 0px;
+}
+
+.contact-image{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer-container{
+    background-color: #2B3035;
+    color: white;
+}
+
+.inner-container{
+    padding: 32px 0px;
+}
+
+.contact-image-map{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
